@@ -8,7 +8,8 @@ def create_app():
     def hello():
         return 'Hello, PetFax!'
     
-    from . import pet
+    from . import (pet, fact)
     app.register_blueprint(pet.bp)
-    
+    app.register_blueprint(fact.bp)
+
     return app
