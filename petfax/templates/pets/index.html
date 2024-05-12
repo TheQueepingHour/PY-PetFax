@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}PetFax{% endblock %}
+
+{% block content%}
+<div class="bodyContainer">
+    <nav class="bodyElement">
+        <ul style="list-style: none;">
+            <li><a href='/facts' class="linkStyle">Facts index</a></li>
+        </ul>
+    </nav>
+    <h1 class="bodyElement">Welcome to PetFax</h1>
+    {% for pet in pets %}
+        <h2 class="bodyElement">{{pet.pet_name}}</h2>
+        <img src="{{pet.pet_photo}}" alt="Photo of pet" />
+        <a href="/pets/{{pet.pet_id}}" class="linkStyle">Click here to learn more about {{pet.pet_name}}</a>
+    {% endfor %}
+</div>
+{% endblock %}
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,4 +41,4 @@
         {% endfor %}
     </div>
 </body>
-</html>
+</html> -->

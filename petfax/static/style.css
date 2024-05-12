@@ -8,6 +8,10 @@
     max-width: 100%;
 }
 
+title{
+    display: none;
+}
+
 .bodyContainer {
     width: 80vw;
     max-width: 90vw;
