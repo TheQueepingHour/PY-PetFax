@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facts Index</title>
+    <title style="display: none;">PetFax Facts Index</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <nav>
-        <ul style="list-style: none;">
-            <li><a href="/pets" class="linkStyle">Back to pets index</a></li>
-        </ul>
-    </nav>
-    <h1>Facts Index Page</h1>
-    {% for pet in pets %}
-        <p>{{pet.pet_fact}}</p>
-    {% endfor %}
-
-    <footer>
-        <p>If you have a fact you'd like to share send it to us <a href="/facts/new">here</a></p>
-    </footer>
+    <div class="bodyContainer">
+        <nav class="bodyElement">
+            <ul style="list-style: none;">
+                <li><a href="/pets" class="linkStyle">Back to pets index</a></li>
+            </ul>
+        </nav>
+        <h1 class="bodyElement">Facts Index Page</h1>
+        {% for pet in pets %}
+            <li class="bodyElement" style="list-style: none;">{{pet.pet_fact}}</li>
+        {% endfor %}
+    
+        <footer class="factFooter">
+            <p class="bodyElement">If you have a fact you'd like to share send it to us: <span><a href="/facts/new" class="linkStyle">here</a></span></p>
+        </footer>
+    </div>
 </body>
 </html>

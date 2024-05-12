@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetFax Show</title>
+    <title style="display: none;">PetFax Show</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="bodyContainer">
-        <nav>
-            <a href="/pets">Go back to pets page</a>
+        <nav class="bodyElement">
+            <a href="/pets" class="linkStyle">Go back to pets page</a>
         </nav>
-        <h1>Now showing {{pet.pet_name}}</h1>
+        <h1 class="bodyElement">Now showing {{pet.pet_name}}</h1>
         <img src="{{pet.pet_photo}}" alt="Photo of pet" />
-        <h2>Fact:</h2>
-        <p>{{pet.pet_fact}}</p>
+        <h2 class="bodyElement">Fact:</h2>
+        <p class="bodyElement">{{pet.pet_fact}}</p>
     </div>
 </body>
 </html>

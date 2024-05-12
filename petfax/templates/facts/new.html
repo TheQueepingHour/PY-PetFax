@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Fact Page</title>
+    <title style="display: none;">New Fact Page</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Provide a new fact!</h1>
-    <form method="POST" action="/facts">
-        <label for="fact">Insert fact here:</label>
-        <input type="text" id="fact" name="fact" />
-        <input type="submit" value="submit" />
-    </form>
+    <div class="bodyContainer">
+        <h1 class="bodyElement">Provide a new fact!</h1>
+        <form method="POST" action="/facts" class="formStyle">
+            <label for="fact">Insert fact here:</label>
+            <input type="text" id="fact" name="fact" />
+            <input type="submit" value="submit" />
+        </form>
+    </div>
 </body>
 </html>
