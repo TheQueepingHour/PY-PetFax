@@ -21,6 +21,7 @@
 }
 .bodyElement {
     background-color: beige;
+    margin-bottom: 1em;
 }
 
 nav {
@@ -49,11 +50,15 @@ h2 {
 
 .formStyle {
     background-color: beige;
-    width: 15em;
+    width: 40em;
+    padding: 1em;
 }
 
 .submitButton {
-    border-radius: 50%;
+    width: 10em;
+    border-radius: 5%;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .factFooter {
