@@ -35,7 +35,8 @@ nav {
 }
 
 img {
-    max-width: 40em;
+    width: 40em;
+    max-width: 100%;
     max-height: 30em;
     border-radius: 10%;
 }
@@ -54,7 +55,8 @@ h2 {
 
 .formStyle {
     background-color: beige;
-    width: 100%;
+    width: 20em;
+    max-width: 100%;
     padding: 1em;
 }
 
