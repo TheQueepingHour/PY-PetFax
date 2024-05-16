@@ -55,16 +55,26 @@ h2 {
 
 .formStyle {
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 20em;
     max-width: 100%;
     padding: 1em;
 }
 
+.formElement {
+    flex-grow: 1;
+    padding: 1em;
+    background-color: beige;
+}
+
 .submitButton {
     width: 10em;
     border-radius: 5%;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
+    margin: 1em;
 }
 
 .factFooter {

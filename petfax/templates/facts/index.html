@@ -10,8 +10,9 @@
         </ul>
     </nav>
     <h1 class="bodyElement">Facts Index Page</h1>
-    {% for pet in pets %}
-        <li class="bodyElement" style="list-style: none;">{{pet.pet_fact}}</li>
+    {% for fact in facts %}
+        <h4 class="bodyElement">{{fact.fact}}</h4>
+        <h5 class="bodyElement">Submitted by: {{fact.submitter}}</h5>
     {% endfor %}
     <br />
     <p class="bodyElement">If you have a fact you'd like to share send it to us: <span><a href="/facts/new" class="linkStyle">here</a></span></p>
