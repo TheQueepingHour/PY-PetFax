@@ -44,6 +44,9 @@ img {
 h1 {
     padding: 1em;
     margin: 0.5em;
+    font-family: "Lexend", sans-serif;
+    color: teal;
+    text-shadow: ;
 }
 h2 {
     margin: 0.5em;
